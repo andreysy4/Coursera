@@ -1,0 +1,10 @@
+http://www.dukelearntoprogram.com/course1/example/index.php
+
+run this code:
+var img = new SimpleImage(200,200);
+print(img);
+for (let pixel of img.values()) {
+    pixel.setRed(255);
+    pixel.setGreen(255);
+}
+print(img);
