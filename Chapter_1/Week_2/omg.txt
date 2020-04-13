@@ -1,10 +1,30 @@
+Ну окей. Рас уж хотят на их сайте код выполнять, то ок:
 http://www.dukelearntoprogram.com/course1/example/index.php
 
-run this code:
+// Задание 1:
 var img = new SimpleImage(200,200);
 print(img);
 for (let pixel of img.values()) {
     pixel.setRed(255);
     pixel.setGreen(255);
 }
+print(img);
+
+// Задание 2:
+var img = new SimpleImage("chapel.png");
+print(img);
+
+let border = img.getWidth() / 3;
+for (let pixel of img.values()) {
+    if (pixel.getX() < border) {
+        pixel.setRed(255);
+    } else {
+        if (pixel.getX() >= border && pixel.getX() <= border * 2) {
+           pixel.setGreen(255); 
+        } else {
+            pixel.setBlue(255);
+        }
+    }
+}
+
 print(img);
