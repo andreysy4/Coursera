@@ -1,0 +1,19 @@
+th {
+    color: darkgray;
+}
+td {
+    text-align: center;
+}
+
+.tdClass {
+    background-color: darkgray;
+}
+
+#tableIdTag {
+    background-color: gold;
+    font-size: 20px;
+}
+
+.CSS_table tr td b{
+    color: red;
+}
