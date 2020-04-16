@@ -9,3 +9,7 @@ h4 {
 #z2 {
     width: max-content;
 }
+
+canvas {
+    border: 2pt solid;
+}
